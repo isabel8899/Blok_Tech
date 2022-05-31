@@ -4,6 +4,7 @@
   "description": "Ik ben Isabel. Ik ga komende periode een matching applicatie bouwen voor mijn studie communication and multimedia design. \r Mijn concept idee is om mensen te matchen met elkaar aan de hand van kledingstijlen. Gematched kunnen ze afspreken om kleding met elkaar in te wisselen.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "Hello world."
   },
   "repository": {
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/isabel8899/Blok_Tech#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "lodash": "^4.17.21",
     "react-avatar-editor": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
