@@ -1,0 +1,49 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;  
+  }
+
+/*kleuren voor de light theme*/
+:root {
+    --creme: #f8f7f2;
+    --logo-groen: #00a86b;
+    --knop-groen: #81ebe0;
+    --zwart: black;
+  }
+
+body {
+    background-color: var(--creme);
+}
+
+a, p, h2, h3, h4, button {
+    font-family: 'nunito', Helvetica, sans-serif;
+}
+
+header {
+    margin-top: 11em;
+}
+
+h1 {
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    color: var(--logo-groen);
+}
+
+div a{
+    padding: 1.5em;
+    background-color: var(--knop-groen);
+    font-weight: 900;  
+    margin: 1.5em;  
+    color: var(--zwart);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5em;
+}
