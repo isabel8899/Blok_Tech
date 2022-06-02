@@ -49,6 +49,10 @@ app.use(express.static('static'));
 
 /* if no routes give response, show 404 page*/
 
+app.use( (req,res) => {
+    res.status(404).send("Error 404: file not found");
+})
+
 
 /* Set template engine */
 

@@ -14,15 +14,16 @@
 }
 
   body {
-    background-color: var(--creme);
+    background-color: var(--wit);
 }
 
-  a, p, h2, h3, h4, button {
+/*lettertype*/
+  a, p, h2, h3, h4, label, legend, input, li {
     font-family: 'nunito', Helvetica, sans-serif;
 }
 
   header {
-    background-color: var(--wit);
+    background-color: var(--creme);
     padding: 1em;
 }
 
@@ -32,3 +33,21 @@
     color: var(--logo-groen);
 }
 
+/*footer terug/verder knop stijlen*/
+
+li {
+  text-decoration: underline;
+  padding: 0.6em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li:last-of-type {
+  background-color: var(--knop-groen);
+  text-decoration: none;
+}

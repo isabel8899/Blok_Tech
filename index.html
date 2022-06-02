@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=	, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <title>Profiel</title>
+   <title>
+       handlebar tutorial
+   </title>
+   <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+   <script src=""handlebar_tutorial.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>Clothing Swap</h1>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Jouw kleding</h2>
-            <img src="./images/jacket.png" alt="plaatje van een jasje">
-            <img src="./images/top.png" alt="plaatje van een topje">
-            <img src="./images/vest.png" alt="plaatje van een hoodie">
-            <img src="./images/dress.png" alt="plaatje van een jurk">
-        </section>
-    </main>
-    
-    <script src="./index.js"></script>
+    <script type="text/x-handlebars-template" id="template">
+        <h1>{{title}}</h1>
+        <ol>
+            {{#each list}}
+            <li> {{this.name}} </li> 
+            {{/each}}
+        </ol>
+        <p>{{footer}}</p>
+
+    </script>
+    <div id="output">
+
+
+    </div>
+
+        <button onclick="fill_template()">
+        fill template
+        </button>    
 </body>
 </html>
