@@ -1,24 +1,30 @@
 *, *::after, *::before {
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;  
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;  
 }
 
 /*kleuren door de site heen*/
 :root {
-    --creme: #f8f7f2;
-    --logo-groen: #00a86b;
-    --knop-groen: #81ebe0;
-    --zwart: black;
-    --wit: white;
+  --creme: #f8f7f2;
+  --logo-groen: #00a86b;
+  --knop-groen: #81ebe0;
+  --knop-groen2: #a8f4da;
+  --zwart: black;
+  --wit: white;
 }
 
-  body {
-    background-color: var(--wit);
+body {
+  background-color: var(--wit);
+  width: 290px;
+}
+
+main {
+  margin: 1em;
 }
 
 /*lettertype*/
-  a, p, h2, h3, h4, label, legend, input, li {
+  a, p, h2, h3, h4, label, legend, input, li, figcaption, button {
     font-family: 'nunito', Helvetica, sans-serif;
 }
 
@@ -33,21 +39,58 @@
     color: var(--logo-groen);
 }
 
+/**formulier stijlen**/
+fieldset {
+  width: 20em;
+  border: none;
+  margin-left: 1em;
+}
+
+form input {
+  background-color: var(--wit);
+  margin: 0.5em;
+  width: 92%;
+}
+
+input[type=submit] {
+  background-color: var(--knop-groen);
+  padding: .5em;
+  cursor: pointer;  
+  width: 7em;
+}
+
+
+/*plaatjes bij bewerk-pagina stijlen*/
+img {
+  width: 85px;
+  height: 85px;
+  margin: .2em;
+  padding: .2;
+  background-color: var(--creme);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5em;;
+}
+
+/*meer kleding toevoegen knop stijlen*/
+button {
+  width: 100px;
+  padding: 0.5em;
+  margin: .5em;
+  background-color: var(--knop-groen2);
+  border: none;
+  box-shadow: 2px 2px #e1e9df;
+  cursor: pointer;  
+}
+
 /*footer terug/verder knop stijlen*/
 
-li {
-  text-decoration: underline;
+a {
   padding: 0.6em;
   padding-left: 1.5em;
   padding-right: 1.5em;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-}
-
-li:last-of-type {
-  background-color: var(--knop-groen);
-  text-decoration: none;
+  color: var(--zwart);
 }

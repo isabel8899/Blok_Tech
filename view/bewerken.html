@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +21,9 @@
     <main>
         <h2>Kleding bewerken</h2>
 
-        <form action="./bewerken.html">
+        <form action="bewerken.html">
 
             <fieldset>
-                <legend>Persoons gegevens</legend>
-
                 <label for="voornaam">Voornaam</label>
                 <input type="text" id="voornaam" required >
 
@@ -44,15 +42,44 @@
 
             <input type="submit" value="Verstuur">
         </form>
-        
+
+
+        <h2>Jouw kleding</h2>
+            
+        <section>
+            <figure>
+                <img src="../images/dress.png" alt="Plaatje van een jurk">
+    
+                <Figcaption>Jurk</Figcaption>
+            </figure>
+    
+            <Figure>
+                <img src="../images/jacket.png" alt="plaatje van een jasje">
+                <figcaption>Jas</figcaption>
+            </Figure>
+    
+            <figure>
+                <img src="../images/vest.png" alt="plaatje van een vest">
+                <figcaption>T-shirt</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="../images/top.png" alt="plaatje van een topje">
+                <figcaption>Topje</figcaption>
+            </figure>
+        </section>
+
+        <button class="toevoegen"> Meer kleding toevoegen </button>
+
+        <h2>Jouw locatie</h2>
+
     </main>
 
     <footer>
-        <ul>
-            <li>< terug</li>
-            <li>klaar</li>
-        </ul>
+         <a href="">< terug</a>
 
     </footer>
+
+    <script src="../index.js" ></script>
 </body>
 </html>
