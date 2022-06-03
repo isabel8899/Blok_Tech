@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
 
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js" defer></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
     <title>Profiel</title>
 </head>
 
@@ -69,7 +72,7 @@
             </figure>
 
             <div>
-                <video autoplay><p>+</p></video>
+                <video autoplay></video>
             </div>
 
         </section>
@@ -77,6 +80,24 @@
         <button class="toevoegen"> Meer kleding toevoegen </button>
 
         <h2>Jouw locatie</h2>
+
+        <form action="bewerken.html">
+
+        <fieldset>
+            <label for="straat">Straat en nummer</label>
+            <input type="text" id="straat" required>
+
+            <label for="stad">stad</label>
+            <input type="text" id="stad" required>
+
+            <label for="land">land</label>
+            <input type="text" id="land" required>
+        </fieldset>
+
+
+            <input type="submit" value="Verstuur">
+
+            <div id="map"></div>
 
     </main>
 

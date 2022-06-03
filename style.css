@@ -16,7 +16,7 @@
 
 body {
   background-color: var(--wit);
-  width: 230px;
+  width: 380px;
 }
 
 main {
@@ -61,7 +61,9 @@ input[type=submit] {
   background-color: var(--knop-groen);
   cursor: pointer;  
   width: 5em;
+  margin-top: .5em;
 }
+
 
 
 /*plaatjes bij bewerk-pagina stijlen*/
