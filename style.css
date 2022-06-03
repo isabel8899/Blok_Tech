@@ -54,7 +54,6 @@ form input {
 
 input[type=submit] {
   background-color: var(--knop-groen);
-  padding: .5em;
   cursor: pointer;  
   width: 7em;
 }
@@ -72,7 +71,6 @@ img {
 section {
   display: flex;
   flex-wrap: wrap;
-  margin: 1.5em;;
 }
 
 /*meer kleding toevoegen knop stijlen*/
@@ -93,4 +91,8 @@ a {
   padding-left: 1.5em;
   padding-right: 1.5em;
   color: var(--zwart);
+}
+
+.camera {
+  width: 10px;
 }
