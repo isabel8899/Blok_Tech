@@ -16,7 +16,7 @@
 
 body {
   background-color: var(--wit);
-  width: 290px;
+  width: 230px;
 }
 
 main {
@@ -26,6 +26,11 @@ main {
 /*lettertype*/
   a, p, h2, h3, h4, label, legend, input, li, figcaption, button {
     font-family: 'nunito', Helvetica, sans-serif;
+    font-size: medium;
+}
+
+::placeholder, input[type=submit], button {
+  font-size: small;
 }
 
   header {
@@ -37,25 +42,25 @@ main {
     font-family: 'Merienda', cursive;
     text-align: center;
     color: var(--logo-groen);
+    font-size: x-large;
 }
 
 /**formulier stijlen**/
 fieldset {
-  width: 20em;
   border: none;
-  margin-left: 1em;
+  margin-left: .5em;
 }
 
 form input {
   background-color: var(--wit);
   margin: 0.5em;
-  width: 92%;
+  width: 90%;
 }
 
 input[type=submit] {
   background-color: var(--knop-groen);
   cursor: pointer;  
-  width: 7em;
+  width: 5em;
 }
 
 
